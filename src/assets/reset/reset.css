@@ -1,0 +1,416 @@
+/*重置属性*/
+
+* {
+    margin: 0;
+    padding: 0;
+    word-break: break-all
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #f5f5f5;
+    font-size: 12px;
+    min-height: 100%;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+em {
+    font-style: normal
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+a,
+input,
+select,
+textarea {
+    color: #424242;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+li {
+    list-style: none
+}
+
+li,
+dt,
+input,
+a,
+div {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0)
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+
+/*通用*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    display: block;
+    *zoom: 1
+}
+
+
+/*重置element-ui样式*/
+
+body .el-tab-pane {
+    padding: 20px;
+}
+
+body .el-input,
+body .el-textarea {
+    max-width: 600px;
+}
+
+body .el-table__header tr th,
+body .el-alert--info {
+    background: #F6F8F9;
+}
+
+body .el-table th.is-leaf {
+    border-bottom: 0px;
+}
+
+body .el-textarea__inner {
+    height: 100px;
+}
+
+body .el-form-item__label {
+    padding-right: 20px;
+}
+
+body .el-card {
+    overflow: inherit
+}
+
+body .el-input .el-input__count .el-input__count-inner {
+    line-height: 1;
+}
+
+body .el-button--primary:focus,
+.el-button--primary:hover {
+    border-color: #3e84fb;
+    background: #3e84fb;
+}
+
+body .el-input--band-unit .el-input__inner {
+    padding-right: 55px;
+}
+
+body .el-input__inner {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/*共用小样式*/
+
+.ktj-tips {
+    color: #999;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.ktj-tips i {
+    font-size: 14px;
+    color: #fdbb57;
+    margin-right: 10px;
+}
+
+.ktj-fl {
+    float: left
+}
+
+.ktj-fr {
+    float: right
+}
+
+.ktj-mr5 {
+    margin-right: 5px;
+}
+
+.ktj-mr10 {
+    margin-right: 10px;
+}
+
+.ktj-mr15 {
+    margin-right: 15px;
+}
+
+.ktj-mr20 {
+    margin-right: 20px;
+}
+
+.ktj-mr30 {
+    margin-right: 30px;
+}
+
+.ktj-ml5 {
+    margin-left: 5px;
+}
+
+.ktj-ml10 {
+    margin-left: 10px;
+}
+
+.ktj-ml15 {
+    margin-left: 15px;
+}
+
+.ktj-ml20 {
+    margin-left: 20px;
+}
+
+.ktj-mt5 {
+    margin-top: 5px;
+}
+
+.ktj-mt10 {
+    margin-top: 10px;
+}
+
+.ktj-mt15 {
+    margin-top: 15px;
+}
+
+.ktj-mt20 {
+    margin-top: 20px;
+}
+
+.ktj-mt25 {
+    margin-top: 25px;
+}
+
+.ktj-mt30 {
+    margin-top: 30px;
+}
+
+.ktj-mb0 {
+    margin-bottom: 0 !important;
+}
+
+.ktj-pd10 {
+    padding-bottom: 10px;
+}
+
+.ktj-pd20 {
+    padding-bottom: 20px;
+}
+
+.ktj-pd30 {
+    padding-bottom: 30px;
+}
+
+.ktj-pt10 {
+    padding-top: 10px;
+}
+
+.ktj-pt20 {
+    padding-top: 20px;
+}
+
+.ktj-pt30 {
+    padding-top: 30px;
+}
+
+.ktj-pl5 {
+    padding-left: 5px;
+}
+
+.ktj-pl10 {
+    padding-left: 10px;
+}
+
+.ktj-pl15 {
+    padding-left: 15px;
+}
+
+.ktj-pl20 {
+    padding-left: 20px;
+}
+
+.ktj-fz12 {
+    font-size: 12px
+}
+
+.ktj-fz14 {
+    font-size: 14px
+}
+
+.ktj-fz16 {
+    font-size: 16px
+}
+
+.ktj-fz18 {
+    font-size: 18px
+}
+
+.ktj-cursor-pointer {
+    cursor: pointer;
+}
+
+.ktj-color-link {
+    color: #49a0f5
+}
+
+.ktj-color-primary {
+    color: #488bff
+}
+.ktj-color-success{
+    color:#58c581
+}
+.ktj-color-red {
+    color: #FF3B30;
+}
+
+.ktj-color-info {
+    color: #999;
+}
+
+.ktj-color-warning {
+    color: #faa82c
+}
+
+.ktj-bg-warning {
+    background-color: #faa82c;
+}
+
+.ktj-copy-link {
+    height: 0px;
+    border: 0px;
+}
+
+.ktj-max-w-fit {
+    max-width: 300px;
+}
+
+.ktj-text-nowrap {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block
+}
+
+.ktj-hide {
+    display: none
+}
+
+.ktj-emotion {
+    width: 22px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 1px;
+}
+
+.ktj-select-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.ktj-select-mask i {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 60px;
+}
+
+.ktj-empty {
+    text-align: center;
+    padding: 240px 0px 40px 0px;
+    color: #ccc;
+    font-size: 14px;
+    background: url(./empty.png) center 60px no-repeat;
+}
+
+.ktj-nopower {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #999;
+    position: relative;
+    padding: 140px 0 30px 0;
+}
+
+.ktj-nopower::before {
+    content: '';
+    width: 90px;
+    height: 90px;
+    background: url(./icon-wraning.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -45px;
+}
+
+.ktj-breadcrumb {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.ktj-blue-btn {
+    background: #fff;
+    border: 1px solid #488BFF;
+    color: #488bff;
+}
+
+.ktj-normal-btn {
+    padding: 0 10px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 32px;
+    min-width: 88px;
+}
